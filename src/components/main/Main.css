@@ -1,0 +1,74 @@
+/* General layout */
+:root {
+    /* Colores de la paleta */
+    --color-primario: #1D5021;   /* Verde oscuro */
+    --color-secundario: #54A66E; /* Verde medio */
+    --color-acento: #90C29B;     /* Verde claro */
+    --color-fondo: #FFFFFF;      /* Blanco */
+    --color-texto: #2C2C2C;      /* Gris oscuro */
+  }
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh; /* Full screen height */
+    background-color: var(--color-secundario); /* Brand color background */
+    padding-top: 80px; /* Offset for the fixed header */
+    padding-bottom: 20px;
+    color: #333; /* Adjust for readability */
+    
+  }
+  
+  /* Each section styling */
+  .booking-search,
+  .categories,
+  .recommendations {
+    width: 90%; /* Full width with padding */
+    max-width: 1200px; /* Max width for larger screens */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Specific section styling */
+  .booking-search {
+    margin-top: 2rem;
+    background-color: var(--color-fondo);
+    color: black;
+    padding: 20px;
+ }
+  
+  .categories {
+    background-color: var(--color-acento);
+    color: var(--color-texto);
+    padding: 20px;
+  }
+  
+  .recommendations {
+    background-color: #ffecb3;
+  }
+  
+  
+  .footer {
+    background-color: var(--color-primario);
+    color: var(--color-fondo);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .main {
+      padding-top: 80px;
+    }
+  
+    .booking-search,
+    .categories,
+    .recommendations {
+      padding: 15px;
+    }
+  }
+  
